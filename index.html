@@ -1,9 +1,10 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SALL Listening Exercise</title>
+<title>Exercise - Describing People</title>
 
 <style>
 *{
@@ -13,9 +14,10 @@
 }
 
 body{
-    font-family: 'Segoe UI', sans-serif;
+    font-family: Arial, sans-serif;
     background:#f4f6f9;
     color:#333;
+    line-height:1.6;
 }
 
 header{
@@ -38,18 +40,18 @@ header{
     background:#e0f2fe;
     padding:15px;
     border-left:5px solid #0284c7;
-    margin-bottom:25px;
     border-radius:8px;
+    margin-bottom:25px;
 }
 
 audio{
     width:100%;
-    margin-bottom:30px;
+    margin:20px 0;
 }
 
 .question{
-    margin-bottom:25px;
-    padding:20px;
+    margin-bottom:20px;
+    padding:15px;
     border:1px solid #ddd;
     border-radius:10px;
 }
@@ -70,8 +72,8 @@ button{
     border:none;
     padding:12px 25px;
     border-radius:8px;
-    font-size:16px;
     cursor:pointer;
+    font-size:16px;
 }
 
 button:hover{
@@ -80,9 +82,21 @@ button:hover{
 
 #result{
     margin-top:25px;
-    font-size:22px;
-    font-weight:bold;
+    padding:20px;
+    border-radius:10px;
     text-align:center;
+    font-size:20px;
+    font-weight:bold;
+}
+
+.correct{
+    background:#dcfce7;
+    color:#166534;
+}
+
+.incorrect{
+    background:#fee2e2;
+    color:#991b1b;
 }
 
 footer{
@@ -91,13 +105,13 @@ footer{
     color:#666;
 }
 </style>
-
 </head>
+
 <body>
 
 <header>
     <h1>SALL Listening Exercise</h1>
-    <p>Describing People</p>
+    <p>Unit: Describing People</p>
 </header>
 
 <div class="container">
@@ -105,7 +119,7 @@ footer{
     <div class="instructions">
         <strong>Instructions:</strong>
         Listen to the audio carefully. You may listen more than once.
-        Then answer the questions below and click <strong>Submit</strong>.
+        Then answer the questions and click <strong>Submit Answers</strong>.
     </div>
 
     <audio controls>
@@ -116,60 +130,59 @@ footer{
     <form id="quizForm">
 
         <div class="question">
-            <h3>1. What is the listening mainly about?</h3>
-
-            <label>
-                <input type="radio" name="q1" value="a">
-                Describing people
-            </label>
-
-            <label>
-                <input type="radio" name="q1" value="b">
-                Describing animals
-            </label>
-
-            <label>
-                <input type="radio" name="q1" value="c">
-                Describing places
-            </label>
+            <h3>1. Who is Jem?</h3>
+            <label><input type="radio" name="q1" value="a"> Hannah's cousin</label>
+            <label><input type="radio" name="q1" value="b"> Hannah's brother</label>
+            <label><input type="radio" name="q1" value="c"> Hannah's friend</label>
         </div>
 
         <div class="question">
-            <h3>2. What information is described?</h3>
-
-            <label>
-                <input type="radio" name="q2" value="a">
-                Physical appearance
-            </label>
-
-            <label>
-                <input type="radio" name="q2" value="b">
-                Transportation
-            </label>
-
-            <label>
-                <input type="radio" name="q2" value="c">
-                Weather
-            </label>
+            <h3>2. Who is Lucy?</h3>
+            <label><input type="radio" name="q2" value="a"> Jem's teacher</label>
+            <label><input type="radio" name="q2" value="b"> Hannah's sister</label>
+            <label><input type="radio" name="q2" value="c"> Jem's girlfriend</label>
         </div>
 
         <div class="question">
-            <h3>3. Which feature is mentioned?</h3>
+            <h3>3. How many brothers does Hannah have?</h3>
+            <label><input type="radio" name="q3" value="a"> One</label>
+            <label><input type="radio" name="q3" value="b"> Two</label>
+            <label><input type="radio" name="q3" value="c"> Three</label>
+        </div>
 
-            <label>
-                <input type="radio" name="q3" value="a">
-                Hair
-            </label>
+        <div class="question">
+            <h3>4. How old are Alex and Jem?</h3>
+            <label><input type="radio" name="q4" value="a"> 14</label>
+            <label><input type="radio" name="q4" value="b"> 15</label>
+            <label><input type="radio" name="q4" value="c"> 16</label>
+        </div>
 
-            <label>
-                <input type="radio" name="q3" value="b">
-                River
-            </label>
+        <div class="question">
+            <h3>5. What is true about Alex and Jem?</h3>
+            <label><input type="radio" name="q5" value="a"> They are twins</label>
+            <label><input type="radio" name="q5" value="b"> They are cousins</label>
+            <label><input type="radio" name="q5" value="c"> They are classmates</label>
+        </div>
 
-            <label>
-                <input type="radio" name="q3" value="c">
-                Mountain
-            </label>
+        <div class="question">
+            <h3>6. What color are their eyes?</h3>
+            <label><input type="radio" name="q6" value="a"> Blue</label>
+            <label><input type="radio" name="q6" value="b"> Brown</label>
+            <label><input type="radio" name="q6" value="c"> Green</label>
+        </div>
+
+        <div class="question">
+            <h3>7. Which description is correct?</h3>
+            <label><input type="radio" name="q7" value="a"> Tall and thin</label>
+            <label><input type="radio" name="q7" value="b"> Short and thin</label>
+            <label><input type="radio" name="q7" value="c"> Tall and strong</label>
+        </div>
+
+        <div class="question">
+            <h3>8. What does Aurelia think about their ears?</h3>
+            <label><input type="radio" name="q8" value="a"> They are ugly</label>
+            <label><input type="radio" name="q8" value="b"> They are cute</label>
+            <label><input type="radio" name="q8" value="c"> They are small</label>
         </div>
 
         <button type="button" onclick="checkAnswers()">
@@ -183,7 +196,7 @@ footer{
 </div>
 
 <footer>
-    SALL Website | Listening Practice
+    Self-Access Language Learning (SALL)
 </footer>
 
 <script>
@@ -191,44 +204,64 @@ footer{
 function checkAnswers(){
 
     const answers = {
-        q1: "a",
-        q2: "a",
-        q3: "a"
+        q1: "b",
+        q2: "c",
+        q3: "b",
+        q4: "b",
+        q5: "a",
+        q6: "c",
+        q7: "a",
+        q8: "b"
     };
 
     let score = 0;
 
-    for(let key in answers){
+    for(let question in answers){
 
-        const selected =
+        let selected =
         document.querySelector(
-            `input[name="${key}"]:checked`
+            `input[name="${question}"]:checked`
         );
 
         if(selected &&
-           selected.value === answers[key]){
+           selected.value === answers[question]){
             score++;
         }
     }
 
     const percentage =
-    Math.round((score / 3) * 100);
+    Math.round((score / 8) * 100);
 
-    let feedback = "";
+    let message = "";
 
-    if(percentage >= 80){
-        feedback = "Excellent!";
-    }else if(percentage >= 60){
-        feedback = "Good Job!";
-    }else{
-        feedback = "Keep Practicing!";
+    if(score === 8){
+        message = "Excellent! You understood all the details.";
+    }
+    else if(score >= 6){
+        message = "Good job! Your listening skill is improving.";
+    }
+    else if(score >= 4){
+        message = "Fair. Listen again and try to identify more details.";
+    }
+    else{
+        message = "Needs more practice. Try listening again.";
     }
 
-    document.getElementById("result").innerHTML =
-        `Your Score: ${score}/3 (${percentage}%)<br>${feedback}`;
+    const result =
+    document.getElementById("result");
+
+    result.innerHTML =
+    `Score: ${score}/8 (${percentage}%)<br><br>${message}`;
+
+    if(score >= 6){
+        result.className = "correct";
+    }else{
+        result.className = "incorrect";
+    }
 }
 
 </script>
 
 </body>
 </html>
+```
